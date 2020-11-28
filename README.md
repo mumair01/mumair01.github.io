@@ -1,2 +1,2 @@
 # personal-website-
-Second attempt at making a personal website from scratch
+Personal website implemented using React js.
