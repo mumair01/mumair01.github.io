@@ -19,7 +19,7 @@ export default class Sidebar extends Component {
                 <aside id="colorlib-aside" className="border js-fullheight">
                     <div className="text-center">
                         <img className="author-img" src={process.env.PUBLIC_URL + "/images/about.jpg"} alt="About"></img>
-                        <h1 id="colorlib-logo">Muhammad Umair</h1>
+                        <h1 id="colorlib-main-menu" className="colorlib-logo">Muhammad Umair</h1>
                         <span className="email">
                             <MdEmail/>
                                 <a href = "mailto:muhammad.umair@tufts.edu" target="_blank" rel='noreferrer'>
@@ -37,25 +37,28 @@ export default class Sidebar extends Component {
                             <ul>
                                 <li><a href="/#about">About</a></li>
                                 <li><a href="/#interests">Skills / Interests</a></li>
-                                <li><a href="/resume">Resume / CV</a></li>
-                                <li><a href="/experience">Experience</a></li>
-                                <li><a href="/projects">Projects</a></li>
+                                <li><Link to="/resume">Resume / CV</Link></li>
+                                <li><Link to="/experience">Experience</Link></li>
+                                <li><Link to="/projects">Projects</Link></li>
                             </ul>
                     </div>
-                    <nav id="colorlib-main-menu" className = "row">
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/mumair/" 
-                                target="_blank" rel="noopener noreferrer"><i 
-                                /><SiLinkedin/></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/mumair01" 
-                                target="_blank" rel="noopener noreferrer"><i 
-                                /><SiGithub/></a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div className="text-center">
+                        <nav id="colorlib-main-menu">
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/mumair/" 
+                                    target="_blank" rel="noopener noreferrer"><i 
+                                    /><SiLinkedin/></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/mumair01" 
+                                    target="_blank" rel="noopener noreferrer"><i 
+                                    /><SiGithub/></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
                     <div className="colorlib-footer">
                         <p><small>Muhammad Umair - Personal website</small></p>
                         <p><small>In active development - More coming soon!</small></p>

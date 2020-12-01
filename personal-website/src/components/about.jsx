@@ -13,25 +13,31 @@ export default class About extends Component {
                             <div>
                                 <div className="col-md-12">
                                     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDuration={2000}>
-                                        <h2 className="colorlib-heading">About</h2>
+                                        <h2 className="colorlib-heading" style={{"font-size": "200%"}}>About</h2>
                                     </Animated>
                                     <Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
-                                        <p>My name is Muhammad Umair, an undergraduate in my senior 
-                                        year at Tufts university studying Computer Science. </p>
-                                        <p>My area of interest includes Human Robot Interaction (HRI), 
-                                            an interdisciplinary field that develops intelligent 
-                                            systems with a focus on improving the human experience. 
-                                            Specifically, I'm interested in developing AI agents 
-                                            that go beyond problem solving in a single domain. Instead,
-                                            they focus on providing a seamless human interaction based 
-                                            on their knowledge of social norms.</p>
-                                        <p>I believe that methods 
-                                            in deep neural netowkrs and reinforcement learning, coupled 
-                                            with an understanding of human cognitive processes can 
-                                            improve human robot interaction. </p>
-                                        <p>My mission is to continue to develop technoology that has 
-                                        an observable and immediate positive impact in people's 
-                                        everyday lives!</p>
+                                    <div style={{"font-size": "medium"}}>
+                                        <p>My name is Muhammad Umair. I'm an undergraduate in my senior 
+                                        year at Tufts university studying Computer Science.
+                                        This website is intended to serve as a showcase 
+                                        of my experiences as a programmer, the projects 
+                                        I've worked on, and my research interests. </p>
+                                        <p> From Software engineering to DevOps to research,
+                                        I'm primarily interested in solving 
+                                        problems in a dynamic,
+                                        fast-paced, and challenging environment. </p>
+                                        <p>My research interests include Human Robot Interaction (HRI),
+                                        an interdisciplinary field developing artificial 
+                                        agents with a focus on improving the interactions 
+                                        between humans and robots. I'm particularly interested in 
+                                        using reinforcement and deep learning to incorporate 
+                                        notions of social norm 
+                                        into AI agents.</p>
+                                        <p>My overall goal is to aid in the development of 
+                                        technology that has a direct and observable 
+                                        impact on people's lives.</p>
+                                    </div>
+                                        
                                     </Animated>
                                 </div>
                             </div>

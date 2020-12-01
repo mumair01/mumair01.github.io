@@ -100,7 +100,7 @@ export default class Projects extends Component {
 					<ScrollableAnchor id={'projects'}>
 						<div className="row col-md-12 colorlib-narrow-content">
 							<Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDuration={2000}>
-								<h2 className="colorlib-heading">Projects</h2>
+								<h2 className="colorlib-heading" style={{"font-size": "200%"}}>Projects</h2>
 							</Animated>
 							<Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
 								<MainTable/>
@@ -150,7 +150,7 @@ export default class Projects extends Component {
 									, to the <a href="http://www.dialogue-and-discourse.org/" target="_blank" rel="noreferrer">Dialogue and 
 									Discourse (D&D) journal.</a> This paper is still 
 									in peer review.</li>
-									<li>Presented GailBot at the <a href="http://www.dialogue-and-discourse.org/" target="_blank" rel="noreferrer"> AMLAP Conference 2020 
+									<li>Presented GailBot at the <a href="https://amlap2020.org/" target="_blank" rel="noreferrer"> AMLAP Conference 2020 
 									</a> as a poster presentation.</li>
 								</ul>
 								Technical details:

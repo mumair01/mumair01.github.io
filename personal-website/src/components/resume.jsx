@@ -47,7 +47,7 @@ class Doc extends Component {
 
             </nav>
 
-            <div style={{ width: 600 }}>
+            <div>
       
             <Document
                 file={this.props.file}
@@ -55,8 +55,6 @@ class Doc extends Component {
                 onLoadError={console.error}>
                 <Page pageNumber={pageNumber} scale={1.3}/>
             </Document>
-          
-        
             </div>
 
             <p>
@@ -77,7 +75,7 @@ export default class Resume extends Component {
                             <div>
                                 <div className="col-md-12">
                                     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDuration={2000}>
-                                        <h2 className="colorlib-heading">Resume / CV</h2>
+                                        <h2 className="colorlib-heading" style={{"font-size": "200%"}}>Resume / CV</h2>
                                     </Animated>
                                     <Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
                                         <Doc file={"./docs/Resume.pdf"}></Doc>

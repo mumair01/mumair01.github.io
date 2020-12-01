@@ -16,7 +16,7 @@ export default class Interests extends Component {
                             <div className = "row">
                                 <div className="col-md-6 col-md-offset-3 col-md-pull-3 ">
                                     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDuration={2000}>
-                                        <h2 className="colorlib-heading">Skills / Areas of interest</h2>
+                                        <h2 className="colorlib-heading"style={{"font-size": "200%"}}>Skills / Areas of interest</h2>
                                     </Animated>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ export default class Interests extends Component {
                                         <div className="services color-1">
                                             <FcAbout/>
                                             <div className="desc">
-                                                <h3>Dev Ops</h3>
+                                                <h3>DevOps</h3>
                                                 <p> My personal projects involve using Jenkins, Docker, Git, 
                                                 and pther frameworks for constructing a Continuous Integration
                                                 pipelines for separate project environments.</p>
