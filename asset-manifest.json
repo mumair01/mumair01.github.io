@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mumair01.github.io/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mumair01.github.io/static/js/main.e92a7d47.chunk.js",
-    "main.js.map": "/mumair01.github.io/static/js/main.e92a7d47.chunk.js.map",
+    "main.js": "/mumair01.github.io/static/js/main.64b2329e.chunk.js",
+    "main.js.map": "/mumair01.github.io/static/js/main.64b2329e.chunk.js.map",
     "runtime-main.js": "/mumair01.github.io/static/js/runtime-main.3f29ae38.js",
     "runtime-main.js.map": "/mumair01.github.io/static/js/runtime-main.3f29ae38.js.map",
     "static/css/2.83355f9e.chunk.css": "/mumair01.github.io/static/css/2.83355f9e.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.83355f9e.chunk.css",
     "static/js/2.b3748af7.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.e92a7d47.chunk.js"
+    "static/js/main.64b2329e.chunk.js"
   ]
 }
