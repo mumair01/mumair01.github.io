@@ -46,7 +46,7 @@ export default class Resume extends Component {
                                         <h2 className="colorlib-heading" style={{"font-size": "200%"}}>Resume / CV</h2>
                                     </Animated>
                                     <Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
-                                        <Doc file={"./docs/Resume.pdf"}></Doc>
+                                        <Doc file={"/docs/Resume.pdf"}></Doc>
                                     </Animated>
                                 </div>
                             </div>

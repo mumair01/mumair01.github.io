@@ -235,28 +235,42 @@ export default class Projects extends Component {
 						<div className="row col-md-12 colorlib-narrow-content">
 							<Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
 								<ColoredLine color ='black'/>
-								<h3 className="colorlib-heading">G-Meta Plus </h3>
+								<h3 className="colorlib-heading">G-Meta Plus</h3>
 								<h3>Deep Neural Networks - Tufts University<br/>Nov. 2020 - Present</h3>
 								Motivation:
 								<ul>
-									<li></li>
+									<li>
+										G-Meta, a model-agnostic meta-agnostic meta-
+										learning method for fast adaptation of 
+										deep networks, can be improved by 
+										incorporating some global graph structure. 
+										It currently only incorporates local 
+										sub-graph structure. 
+									</li>
+									<li>G-Meta uses Probabalistic Nearest Neighbor 
+									(PrNN) classification to make predictions. Our 
+									hypothesis is that we can replace PrNN with a 
+									more effective metric-learning technique. </li>
 								</ul>
 								Role:
 								<ul>
-									<li>
-									Modified G-Meta, a model-agnostic 
-									meta-learning method for fast adaptation 
-									of deep networks, to incorporate global 
-									graph structure through various sub-graph 
-									relationships, such as sub-graph distance.
+									<li>Provided theoretical justification 
+									of using subgraph relationships to incorporate 
+									global structure knowledge in G-Meta.  
 									</li>
-									<li>Incorporated a prototypical network 
-									component with a relation network for label
-									 prediction in GNN’s.</li>
+									<li>Determined that a relation network 
+									would be a good replacement for the PrNN component 
+									of G-Meta. </li>
+									<li>Modified original G-Meta code to implement 
+									the changes described above and set up the 
+									architecture in Google Colab to train the model. </li>
 								</ul>
 								Technical details:
 								<ul>
-								
+									<li>Replaced PrNN with a relation network in G-Meta
+									to train a function to compare support and query data.</li>
+									<li>Incorporated shortest path between sub-graphs as one of the 
+									augmented features to incorporate global structure knowledge.</li>
 								</ul>
 								Future goals:
 								<ul>
@@ -266,12 +280,12 @@ export default class Projects extends Component {
 								</ul>
 								Collaboratos:
 								<ul>
-									<li><a href="https://www.linkedin.com/in/andrew-wang-110102157/"target="_blank" rel="noreferrer">
+									<li><a href="https://www.linkedin.com/in/mert-erden-460007a8/" target="_blank" rel="noreferrer">
 										Mert Edren
 									</a> - Tufts University 
 									</li>
 									<li>
-										<a href="https://www.linkedin.com/in/andrew-wang-110102157/"target="_blank" rel="noreferrer">
+										<a href="https://www.linkedin.com/in/gianmarcovisani/" target="_blank" rel="noreferrer">
 										Gian Marco Visani
 									</a> - Tufts University 
 									</li>
@@ -279,7 +293,16 @@ export default class Projects extends Component {
 								</ul>
 								Additional Resources:
 								<ul>
-									
+									<li>
+										<Link to={process.env.PUBLIC_URL + "/docs/G-Meta-proposal.pdf"} target="_blank">G-Meta plus original proposal </Link>
+									</li>
+									<li>
+										<a href="https://arxiv.org/abs/2006.07889"target="_blank" rel="noreferrer">
+										Graph Meta Learning via Local Subgraphs - 
+										Huang, Kexin and Zitnik, Marinka, NeurIPS, 2020
+									</a>
+									</li>
+							
 								</ul>
 								<ColoredLine color ='black'/>
 							</Animated>

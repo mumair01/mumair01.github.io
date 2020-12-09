@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "http://mumair01.github.io/mumair01.github.io",
   "dependencies": {
     "@react-pdf/renderer": "^1.6.12",
     "@testing-library/jest-dom": "^5.11.6",
