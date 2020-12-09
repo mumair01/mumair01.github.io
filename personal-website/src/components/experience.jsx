@@ -123,7 +123,7 @@ export default class Experience extends Component {
                                 <div className ="timeline-entry-inner">
                                     <div className="timeline-label">
                                             <FcAbout></FcAbout>                    
-                                        <h2>Pakistan Aeronautical Complex (PAC)
+                                        <h2>Pakistan Aeronautical Complex (PAC) - Intern
                                             <br></br><span> Kamra, Pakistan </span><br></br><span>June 2016 - Aug. 2016</span></h2>
                                         <p></p>
                                     </div>

@@ -22,17 +22,16 @@ export default class About extends Component {
                                         This website is intended to serve as a showcase 
                                         of my experiences as a programmer, the projects 
                                         I've worked on, and my research interests. </p>
-                                        <p> From Software engineering to DevOps to research,
+                                        <p> From software engineering to DevOps to research,
                                         I'm primarily interested in solving 
                                         problems in a dynamic,
                                         fast-paced, and challenging environment. </p>
                                         <p>My research interests include Human Robot Interaction (HRI),
-                                        an interdisciplinary field developing artificial 
-                                        agents with a focus on improving the interactions 
-                                        between humans and robots. I'm particularly interested in 
-                                        using reinforcement and deep learning to incorporate 
-                                        notions of social norm 
-                                        into AI agents.</p>
+                                        an interdisciplinary field that emphasizes 
+                                        improving interaction between humans and robots. 
+                                        I'm particularly interested in incorporating 
+                                        human-like conversational features
+                                        to improve dialogue-systems in robots.</p>
                                         <p>My overall goal is to aid in the development of 
                                         technology that has a direct and observable 
                                         impact on people's lives.</p>

@@ -9,12 +9,13 @@ import {
 } from "react-router-dom";
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import {MdEmail} from 'react-icons/md'
-import ScrollableAnchor from 'react-scrollable-anchor'
+import Collapsible from 'react-collapsible';
 
 
 export default class Sidebar extends Component {
     render () {
         return (
+        
             <div>
                 <aside id="colorlib-aside" className="border js-fullheight">
                     <div className="text-center">
@@ -64,8 +65,9 @@ export default class Sidebar extends Component {
                         <p><small>In active development - More coming soon!</small></p>
                     </div>
                 </aside>
-
+                
             </div>
+            
         )
     }
 }

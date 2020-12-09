@@ -2,66 +2,34 @@
 import React, { Component } from 'react'
 import {Animated} from "react-animated-css";
 import ScrollableAnchor from 'react-scrollable-anchor'
-import { Document, Page,pdfjs } from 'react-pdf';
 import {
 		BrowserRouter as Router,
 		Link,
 } from "react-router-dom";
 
+
 class Doc extends Component {
-    
 
-   constructor(props){
-        super(props);
-        pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-    } 
-  state = { numPages: null, pageNumber: 1 };
 
-  onDocumentLoadSuccess = ({ numPages }) => {
-
-    this.setState({ numPages });
-  };
-
-    goToPrevPage = () => {
-         if (this.state.pageNumber - 1 > 0){
-            this.setState(state => ({ pageNumber: state.pageNumber - 1 }));
-        }
-    }
-    goToNextPage = () => {
-        if (this.state.pageNumber + 1 <= this.state.numPages){
-            this.setState(state => ({ pageNumber: state.pageNumber + 1 }));
-        }
-    }
-
-    render() {
-        const { pageNumber, numPages } = this.state;
-
-    return (
-        <div>
-            <nav>
-            <button onClick={this.goToPrevPage}>Prev</button>
-            <button onClick={this.goToNextPage}>Next</button>
-            <button>
-                <Link to={this.props.file} target="_blank" download>Download</Link>
-            </button>
-
-            </nav>
-
+    render () {
+        return (
             <div>
-      
-            <Document
-                file={this.props.file}
-                onLoadSuccess={this.onDocumentLoadSuccess}
-                onLoadError={console.error}>
-                <Page pageNumber={pageNumber} scale={1.3}/>
-            </Document>
-            </div>
-
-            <p>
-            Page {pageNumber} of {numPages}
-            </p>
-        </div>
-        );
+                <nav>
+                    <button>
+                        <Link to={process.env.PUBLIC_URL + this.props.file} target="_blank" download>Download</Link>
+                    </button>
+                </nav>
+                <iframe title="CV" 
+                src={process.env.PUBLIC_URL + this.props.file}  
+                style={{
+                    "width":"90%",
+                    "height":"600px",
+                    "border":"2px solid black",
+        
+                    }}
+                ></iframe>
+           </div>
+        )
     }
 }
 

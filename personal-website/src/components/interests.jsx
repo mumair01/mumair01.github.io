@@ -27,13 +27,12 @@ export default class Interests extends Component {
                                             <FcAbout/>
                                             <div className="desc">
                                                 <h3>Machine Learning / Artificial Intelligence</h3>
-                                                <p> My experience as an Artificial Intelligence intern at 
-                                                    Vicarious Surgical and research at the Tufts Human 
-                                                    Interaction Lab has allowed me to solve real problems 
-                                                    using ML/AI techniques. 
-                                                    Additionally, I've taken a number of ML / AI courses at Tufts, including 
-                                                    Intro. to Artificial Intelligence, Intro. to Machine Learning, 
-                                                    Deep Neural Networks, Linear Algebra, and Calculus-III.</p>
+                                                <p> My experience in industry and academia 
+                                                has given me the ability to apply machine 
+                                                learning techniques to real-world problems. 
+                                                I have also taken a number of ML/AI courses at Tufts, 
+                                                which include Intro. to AI, Intro. to ML and data mining, 
+                                                Deep Neural Networks, Linear Algebra, and Calculas (1, 2, and 3).</p>
                                             </div>
                                         </div>
                                     </div>
@@ -42,11 +41,16 @@ export default class Interests extends Component {
                                             <FcAbout/>
                                             <div className="desc">
                                                 <h3>Natural Language Processing</h3>
-                                                <p>My work at the Human Interaction Lab at Tufts involves 
-                                                exploring algorithmic approaches to Conversation Analysis, 
-                                                a method that seeks to identify the underlying structure of 
-                                                natural conversation. This involves working with Speech to Text 
-                                                (STT) systems and develop NLP frameworks.</p>
+                                                <p>
+                                                One of my major projects, GailBot, 
+                                                involved using many different speech to 
+                                                text engines, from IBM's Watson to CMU 
+                                                Sphinx, to transcribe conversation.
+                                                GailBot, and other projects, have 
+                                                given me experience in working with 
+                                                natual language toolkits and speech 
+                                                to text engines. 
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -55,11 +59,14 @@ export default class Interests extends Component {
                                             <FcAbout/>
                                             <div className="desc">
                                                 <h3>Application design</h3>
-                                                <p>Most of my major projects have involved coming up 
-                                                with an abstract designs for applications based on
-                                                common design patterns. These involve designing the backends 
-                                                for the Tufts Technology Services NextGen. Alert System and 
-                                                Camera Calibration tool for Vicarious Surgical.</p>
+                                                <p> 
+                                                Most of my projects involve using 
+                                                object-oriented design principles
+                                                to create abstract backends. This 
+                                                includes backends for the Tufts 
+                                                Technology Services NextGen. alert 
+                                                system and the camera calibration tool
+                                                for Vicarious Surgical.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,8 +76,12 @@ export default class Interests extends Component {
                                             <div className="desc">
                                                 <h3>DevOps</h3>
                                                 <p> My personal projects involve using Jenkins, Docker, Git, 
-                                                and pther frameworks for constructing a Continuous Integration
-                                                pipelines for separate project environments.</p>
+                                                and other frameworks to ensure 
+                                                continuous integration and 
+                                                an efficient workflow.
+                                                I'm interested in learning more 
+                                                about machine learning specific 
+                                                pipelines, or ML-OPS more broadly. </p>
                                             </div>
                                         </div>
                                     </div>
