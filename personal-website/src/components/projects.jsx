@@ -72,6 +72,14 @@ const tablePropsInit: ITableProps = {
 		section_link: "#camera_calibration",
 		section:"camera_calibration"
 	},
+	{
+		name: "Jeffersonize: CHAT/CAlite converter",
+		keywords : "C++", 
+		affiliation: "Human Interaction Lab @ Tufts",
+		dates: "July 2018 - Sept. 2018",
+		section_link: "#jeffersonize",
+		section: "jeffersonize"
+	}
   ],
 
   rowKeyField: 'name',
@@ -237,6 +245,11 @@ export default class Projects extends Component {
 								<ColoredLine color ='black'/>
 								<h3 className="colorlib-heading">G-Meta Plus</h3>
 								<h3>Deep Neural Networks - Tufts University<br/>Nov. 2020 - Present</h3>
+								
+								<p><i>This project started as the final project 
+									for Comp-137: Deep Neural Networks at Tufts 
+									university in Fall 2020.</i></p>
+
 								Motivation:
 								<ul>
 									<li>
@@ -271,12 +284,17 @@ export default class Projects extends Component {
 									to train a function to compare support and query data.</li>
 									<li>Incorporated shortest path between sub-graphs as one of the 
 									augmented features to incorporate global structure knowledge.</li>
+									<li>Achieved an accuracy on node classification 
+										tasks (83%) that is two standard deviations higher 
+										than that of G-Meta (76%).
+									</li>
 								</ul>
 								Future goals:
 								<ul>
-									<li>Present the project as part of the 
-									Comp-137: Deep Neural Networks course 
-									at Tufts university on Dec 12th, 2020.</li>
+									<li>We presented this project as part of the 
+										Comp-137: Deep Neural Networks course
+										at Tufts university on Dec. 17th 2020 
+										and plan to publish it as a research paper.  </li>
 								</ul>
 								Collaboratos:
 								<ul>
@@ -304,6 +322,8 @@ export default class Projects extends Component {
 									</li>
 							
 								</ul>
+								<br></br>
+								<ReactPlayer url="https://youtu.be/OQEPZb0R1jc"/>
 								<ColoredLine color ='black'/>
 							</Animated>
 							
@@ -483,6 +503,73 @@ export default class Projects extends Component {
 								Additional Resources:
 								<ul>
 									<li>Available on request.</li>
+								</ul>
+								<ColoredLine color ='black'/>
+							</Animated>
+							
+						</div>
+					</ScrollableAnchor>
+				</section>
+				<section className="colorlib-about" data-section="jeffersonize">
+					<ScrollableAnchor id={'jeffersonize'}>
+						<div className="row col-md-12 colorlib-narrow-content">
+							<Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
+								<ColoredLine color ='black'/>
+								<h3 className="colorlib-heading">Jeffersonize: CHAT/CAlite converter</h3>
+								<h3>Human Interaction Lab - Tufts University<br/>July 2018 - Sept. 2018</h3>
+								Motivation:
+								<ul>
+									<li>
+										There was a need to create a 
+										computer-readable version of the 
+										Conversation Analysis (CA) transcription 
+										format used by Conversation Analysts. 
+									</li>
+									<li>
+										This new computer-readable format needs 
+										to be integrated with the existing 
+										transcription format: CHAT. 
+									</li>
+								</ul>
+								Role:
+								<ul>
+									<li>
+										Integrated new symbols into the existing 
+										transcprion format, CA, to create CAlite.
+									</li>
+									<li>
+										Designed and implemeted Jeffersonize, a 
+										tool to enable bi-directional conversion 
+										between CHAT and CAlite. 
+									</li>
+								</ul>
+								Technical details:
+								<ul>
+									<li>The tool has an object-oriented design 
+										with a base class for shared conversion 
+										and sub-classes for bi-directional conversions. 
+									</li>
+								</ul>
+								Future goals:
+								<ul>
+									<li>The project has been fully completed.</li>
+								</ul>
+								Collaboratos:
+								<ul>
+									<li><a href="https://saulalbert.net/"
+										target="_blank" rel="noreferrer">Saul Albert</a> - 
+										Project manager </li>
+								</ul>
+								Additional Resources:
+								<ul>
+									<li>
+									<a href="https://github.com/mumair01/Jeffersonize"
+										target="_blank" rel="noreferrer">Jeffersonize repository</a>
+									</li>
+									<li>
+									<a href="https://sites.tufts.edu/hilab/"
+										target="_blank" rel="noreferrer">Tufts Human Interaction Lab</a>
+									</li>
 								</ul>
 								<ColoredLine color ='black'/>
 							</Animated>

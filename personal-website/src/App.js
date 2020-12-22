@@ -14,6 +14,7 @@ import Projects from './components/projects';
 import Interests from './components/interests';
 import Resume from './components/resume';
 import Experience from './components/experience';
+import NewsTicker from './components/news_ticker';
 // Importing style elements 
 import './App.css';
 
@@ -33,6 +34,7 @@ class App extends Component {
 				<div id="colorlib-wrap">
 					<Router basename={"/"}>
 						<Sidebar></Sidebar>
+						{/* <NewsTicker/> */}
 							<div id="colorlib-main">
 								<Switch>
 									<Route exact path="/" component = {MainPage}></Route>
