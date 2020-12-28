@@ -42,6 +42,7 @@ class App extends Component {
 									<Route path="/resume" component={Resume}></Route>
 									<Route path="/experience" component={Experience}></Route>
 									<Route path="/*" component={MainPage}></Route>
+								
 								</Switch>
 							</div>
 					</Router>

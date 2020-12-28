@@ -61,16 +61,16 @@
 
 
 	<script>
-		// if it's on index.html
-		if (window.sessionStorage.path) {
-		
+	// if it's on index.html
+	if (! window.sessionStorage.path) {
 
-		} else { // if it's on 404.html (path doens't exist)
-		let path = window.location.pathname; // get the path url
-		window.sessionStorage.path = path; // saves on sessionStorage
-		window.location.href = '/'; // go to index
-		}
-	</script>
+	} else { // if it's on 404.html (path doens't exist)
+	// let path = window.location.pathname; // get the path url
+	// window.sessionStorage.path = path; // saves on sessionStorage
+	window.location.href = '/'; // go to index
+	}
+</script>
+
 </body>
 
 </html>
