@@ -41,14 +41,6 @@ const tablePropsInit: ITableProps = {
 		section: "GailBot"
 	},
 	{
-		name: "G-Meta Plus",
-		keywords: "Graph Neural Networks, Meta-learning",
-		dates:"Nov. 2020 - Present",
-		affiliation: "Deep Neural Networks @ Tufts University",
-		section_link: "#g_meta_plus",
-		section: "g_meta_plus"
-	},
-	{
 		name:  'NextGen Alert System',
 		keywords: "Python, React, Kibana, ElasticSearch",
 		affiliation: 'Tufts Technology Services (TTS)',
@@ -57,10 +49,18 @@ const tablePropsInit: ITableProps = {
 		section: "NextGen"
 	},
 	{
+		name: "G-Meta Plus",
+		keywords: "Graph Neural Networks, Meta-learning",
+		dates:"Nov. 2020 - Jan. 2021",
+		affiliation: "Deep Neural Networks @ Tufts University",
+		section_link: "#g_meta_plus",
+		section: "g_meta_plus"
+	},
+	{
 		name: "GailBot: UI / UX design",
 		keywords: "Frontend, UI/UX, Human Factors Engineering, PyQt5",
 		affiliation: "Human Interaction Lab @ Tufts",
-		dates: "Sept. 2020 - Present",
+		dates: "Sept. 2020 - Jan. 2021",
 		section_link : "#GailBot_UI_UX",
 		section: "GailBot_UI_UX"
 	},
@@ -238,98 +238,6 @@ export default class Projects extends Component {
 						</div>
 					</ScrollableAnchor>
 				</section>
-				<section className="colorlib-about" data-section="g_meta_plus">
-					<ScrollableAnchor id={'g_meta_plus'}>
-						<div className="row col-md-12 colorlib-narrow-content">
-							<Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
-								<ColoredLine color ='black'/>
-								<h3 className="colorlib-heading">G-Meta Plus</h3>
-								<h3>Deep Neural Networks - Tufts University<br/>Nov. 2020 - Present</h3>
-								
-								<p><i>This project started as the final project 
-									for Comp-137: Deep Neural Networks at Tufts 
-									university in Fall 2020.</i></p>
-
-								Motivation:
-								<ul>
-									<li>
-										G-Meta, a model-agnostic meta-agnostic meta-
-										learning method for fast adaptation of 
-										deep networks, can be improved by 
-										incorporating some global graph structure. 
-										It currently only incorporates local 
-										sub-graph structure. 
-									</li>
-									<li>G-Meta uses Probabalistic Nearest Neighbor 
-									(PrNN) classification to make predictions. Our 
-									hypothesis is that we can replace PrNN with a 
-									more effective metric-learning technique. </li>
-								</ul>
-								Role:
-								<ul>
-									<li>Provided theoretical justification 
-									of using subgraph relationships to incorporate 
-									global structure knowledge in G-Meta.  
-									</li>
-									<li>Determined that a relation network 
-									would be a good replacement for the PrNN component 
-									of G-Meta. </li>
-									<li>Modified original G-Meta code to implement 
-									the changes described above and set up the 
-									architecture in Google Colab to train the model. </li>
-								</ul>
-								Technical details:
-								<ul>
-									<li>Replaced PrNN with a relation network in G-Meta
-									to train a function to compare support and query data.</li>
-									<li>Incorporated shortest path between sub-graphs as one of the 
-									augmented features to incorporate global structure knowledge.</li>
-									<li>Achieved an accuracy on node classification 
-										tasks (83%) that is two standard deviations higher 
-										than that of G-Meta (76%).
-									</li>
-								</ul>
-								Future goals:
-								<ul>
-									<li>We presented this project as part of the 
-										Comp-137: Deep Neural Networks course
-										at Tufts university on Dec. 17th 2020 
-										and plan to publish it as a research paper.  </li>
-								</ul>
-								Collaboratos:
-								<ul>
-									<li><a href="https://www.linkedin.com/in/mert-erden-460007a8/" target="_blank" rel="noreferrer">
-										Mert Edren
-									</a> - Tufts University 
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/in/gianmarcovisani/" target="_blank" rel="noreferrer">
-										Gian Marco Visani
-									</a> - Tufts University 
-									</li>
-									
-								</ul>
-								Additional Resources:
-								<ul>
-									<li>
-										<Link to={process.env.PUBLIC_URL + "/docs/G-Meta-proposal.pdf"} target="_blank">G-Meta plus original proposal </Link>
-									</li>
-									<li>
-										<a href="https://arxiv.org/abs/2006.07889"target="_blank" rel="noreferrer">
-										Graph Meta Learning via Local Subgraphs - 
-										Huang, Kexin and Zitnik, Marinka, NeurIPS, 2020
-									</a>
-									</li>
-							
-								</ul>
-								<br></br>
-								<ReactPlayer url="https://youtu.be/OQEPZb0R1jc"/>
-								<ColoredLine color ='black'/>
-							</Animated>
-							
-						</div>
-					</ScrollableAnchor>
-				</section>
 				<section className="colorlib-about" data-section="NextGen">
 					<ScrollableAnchor id={'NextGen'}>
 						<div className="row col-md-12 colorlib-narrow-content">
@@ -366,7 +274,7 @@ export default class Projects extends Component {
 								</ul>
 								Technical details:
 								<ul>
-									<li>Technical details are not publically 
+									<li>Technical details are not publicly
 									available. Please reach out for more information.</li>
 								</ul>
 								Future goals:
@@ -375,7 +283,7 @@ export default class Projects extends Component {
 									<li>Incorporate machine learning techniques to 
 									analyze data trends in the cluster.</li>
 								</ul>
-								Collaboratos:
+								Collaborators:
 								<ul>
 									<li><a href="https://www.linkedin.com/in/andrew-wang-110102157/"target="_blank" rel="noreferrer">
 										Andrew Wang
@@ -403,17 +311,108 @@ export default class Projects extends Component {
 						</div>
 					</ScrollableAnchor>
 				</section>
+				<section className="colorlib-about" data-section="g_meta_plus">
+					<ScrollableAnchor id={'g_meta_plus'}>
+						<div className="row col-md-12 colorlib-narrow-content">
+							<Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
+								<ColoredLine color ='black'/>
+								<h3 className="colorlib-heading">G-Meta Plus</h3>
+								<h3>Deep Neural Networks - Tufts University<br/>Nov. 2020 - Jan. 2021</h3>
+								
+								<p><i>This project started as the final project 
+									for Comp-137: Deep Neural Networks at Tufts 
+									university in Fall 2020.</i></p>
+
+								Motivation:
+								<ul>
+									<li>
+										G-Meta, a model-agnostic meta-agnostic meta-
+										learning method for fast adaptation of 
+										deep networks, can be improved by 
+										incorporating some global graph structure. 
+										It currently only incorporates local 
+										sub-graph structure. 
+									</li>
+									<li>G-Meta uses Probabilistic Nearest Neighbor 
+									(PrNN) classification to make predictions. Our 
+									hypothesis is that we can replace PrNN with a 
+									more effective metric-learning technique. </li>
+								</ul>
+								Role:
+								<ul>
+									<li>Provided theoretical justification 
+									of using subgraph relationships to incorporate 
+									global structure knowledge in G-Meta.  
+									</li>
+									<li>Determined that a relation network 
+									would be a good replacement for the PrNN component 
+									of G-Meta. </li>
+									<li>Modified original G-Meta code to implement 
+									the changes described above and set up the 
+									architecture in Google Colab to train the model. </li>
+								</ul>
+								Technical details:
+								<ul>
+									<li>Replaced PrNN with a relation network in G-Meta
+									to train a function to compare support and query data.</li>
+									<li>Incorporated shortest path between sub-graphs as one of the 
+									augmented features to incorporate global structure knowledge.</li>
+									<li>Achieved an accuracy on node classification 
+										tasks (83%) that is two standard deviations higher 
+										than that of G-Meta (76%).
+									</li>
+								</ul>
+								Future goals:
+								<ul>
+									<li>We presented this project as part of the 
+										Comp-137: Deep Neural Networks course
+										at Tufts university on Dec. 17th 2020. </li>
+								</ul>
+								Collaborators:
+								<ul>
+									<li><a href="https://www.linkedin.com/in/mert-erden-460007a8/" target="_blank" rel="noreferrer">
+										Mert Edren
+									</a> - Tufts University 
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/gianmarcovisani/" target="_blank" rel="noreferrer">
+										Gian Marco Visani
+									</a> - Tufts University 
+									</li>
+									
+								</ul>
+								Additional Resources:
+								<ul>
+									<li>
+										<Link to={process.env.PUBLIC_URL + "/docs/G-Meta-proposal.pdf"} target="_blank">G-Meta plus original proposal </Link>
+									</li>
+									<li>
+										<a href="https://arxiv.org/abs/2006.07889"target="_blank" rel="noreferrer">
+										Graph Meta Learning via Local Subgraphs - 
+										Huang, Kexin and Zitnik, Marinka, NeurIPS, 2020
+									</a>
+									</li>
+							
+								</ul>
+								<br></br>
+								<ReactPlayer url="https://youtu.be/OQEPZb0R1jc"/>
+								<ColoredLine color ='black'/>
+							</Animated>
+							
+						</div>
+					</ScrollableAnchor>
+				</section>
 				<section className="colorlib-about" data-section="GailBot_UI_UX">
 					<ScrollableAnchor id={'GailBot_UI_UX'}>
 						<div className="row col-md-12 colorlib-narrow-content">
 							<Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
 								<ColoredLine color ='black'/>
 								<h3 className="colorlib-heading">GailBot: UI / UX Design</h3>
-								<h3>Human Interaction Lab - Tufts University<br/>Sept. 2020 - Present</h3>
+								<h3>Human Interaction Lab - Tufts University<br/>Sept. 2020 - Jan. 2021</h3>
 								Motivation:
 								<ul>
 									<li>GailBot, an automated system for generating 
-									Jeffersonian transcipts, is currently a command line tool.
+									Jeffersonian transcripts, is currently a command line tool.
 									It needs to be converted to a graphical user interface (GUI)
 									for non-technical users.</li>
 									<li>GUI needs to be based on feedback from the CA community, 
@@ -439,14 +438,16 @@ export default class Projects extends Component {
 								<ul>
 									<li>Complete the GUI implementation.</li>
 								</ul>
-								Collaboratos:
+								Collaborators:
 								<ul>
 									<li><a href="https://evadenman.com/index.html"target="_blank" rel="noreferrer">Eva Denman</a> - Lead designer / Intern @ the Tufts Human Interaction Lab</li>
 								</ul>
 								Additional Resources:
 								<ul>
-									<li>Documentation and video tutorials coming soon!</li>
+									<li>Available on request.</li>
 								</ul>
+								<br></br>
+								<ReactPlayer url="https://youtu.be/UbnOunPG4mU"/>
 								<ColoredLine color ='black'/>
 							</Animated>
 							
@@ -488,15 +489,15 @@ export default class Projects extends Component {
 									<li>Used <a href="https://opencv.org/"target="_blank" rel="noreferrer">OpenCV</a> to 
 									 extract camera intrinsics/extrinsics and remove image distortions based on 
 									 their value. </li>
-									<li>Supports multipel calibration patterns as abstract entities.</li>
-									<li>Further technical details are not publicvally available.
+									<li>Supports multiple calibration patterns as abstract entities.</li>
+									<li>Further technical details are not publicly available.
 									Please reach out for more information.</li>
 								</ul>
 								Future goals:
 								<ul>
 									<li>The project has been fully completed.</li>
 								</ul>
-								Collaboratos:
+								Collaborators:
 								<ul>
 									<li><a href="https://engineering.tufts.edu/cs/people/faculty/fabrizio-santini"target="_blank" rel="noreferrer">Fabrizio Santini</a> - Principal AI Engineer @ Vicarious Surgical</li>
 								</ul>
@@ -535,10 +536,10 @@ export default class Projects extends Component {
 								<ul>
 									<li>
 										Integrated new symbols into the existing 
-										transcprion format, CA, to create CAlite.
+										transcription format, CA, to create CAlite.
 									</li>
 									<li>
-										Designed and implemeted Jeffersonize, a 
+										Designed and implemented Jeffersonize, a 
 										tool to enable bi-directional conversion 
 										between CHAT and CAlite. 
 									</li>
@@ -554,7 +555,7 @@ export default class Projects extends Component {
 								<ul>
 									<li>The project has been fully completed.</li>
 								</ul>
-								Collaboratos:
+								Collaborators:
 								<ul>
 									<li><a href="https://saulalbert.net/"
 										target="_blank" rel="noreferrer">Saul Albert</a> - 

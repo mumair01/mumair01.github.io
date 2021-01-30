@@ -17,9 +17,10 @@ export default class About extends Component {
                                     </Animated>
                                     <Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
                                     <div style={{"font-size": "medium"}}>
-                                        <p>My name is Muhammad Umair. I'm an undergraduate in my senior 
-                                        year at Tufts university studying Computer Science.
-                                        This website is intended to serve as a showcase 
+                                        <p>My name is Muhammad Umair. I'm an undergraduate 
+                                        studying computer science in my senior year 
+                                        at Tufts University and expect to graduate 
+                                        in May 2021. This website is intended to serve as a showcase 
                                         of my experiences as a programmer, the projects 
                                         I've worked on, and my research interests. </p>
                                         <p> From software engineering to DevOps to research,

@@ -62,7 +62,7 @@ export default class Sidebar extends Component {
                     
                     <div className="colorlib-footer">
                         <p><small>Muhammad Umair - Personal website</small></p>
-                        <p><small>In active development - More coming soon!</small></p>
+                        <p><small>Muhammad Umair © 2021</small></p>
                     </div>
                 </aside>
                 

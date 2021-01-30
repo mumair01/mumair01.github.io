@@ -112,10 +112,9 @@ export default class Experience extends Component {
                                 <div className ="timeline-entry-inner">
                                     <div className="timeline-label">
                                             <FcAbout></FcAbout>                    
-                                        <h2>Tufts University - Teaching Assistant
+                                        <h2>Tufts University - Teaching Assistant (computational design)
                                             <br></br><span> Medford, MA </span><br></br><span>May 2018 - Jan. 2019</span></h2>
-                                        <p>Teaching assistant for Intro. to Computational Design, 
-                                            taught by Professor Soha Hassoun, at Tufts University.</p>
+                                        
                                     </div>
                                 </div>
                             </article>
