@@ -37,7 +37,7 @@ export default class Sidebar extends Component {
                     <div id="colorlib-main-menu" role="navigation" className="navbar">
                             <ul>
                                 <li><a href="/#about">About</a></li>
-                                <li><a href="/#interests">Skills / Interests</a></li>
+                                <li><a href="/#interests">Skills & Interests</a></li>
                                 <li><Link to="/resume">Resume / CV</Link></li>
                                 <li><Link to="/experience">Experience</Link></li>
                                 <li><Link to="/projects">Projects</Link></li>

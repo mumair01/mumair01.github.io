@@ -16,7 +16,7 @@ export default class Interests extends Component {
                             <div className = "row">
                                 <div className="col-md-6 col-md-offset-3 col-md-pull-3 ">
                                     <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true} animationInDuration={2000}>
-                                        <h2 className="colorlib-heading"style={{"font-size": "200%"}}>Skills / Areas of interest</h2>
+                                        <h2 className="colorlib-heading"style={{"font-size": "200%"}}>Skills & Interests</h2>
                                     </Animated>
                                 </div>
                             </div>
@@ -24,7 +24,6 @@ export default class Interests extends Component {
                                 <Animated animationIn="fadeInUp" isVisible={true} animationInDuration={2000}>
                                     <div className="col-md-5 text-center">
                                         <div className="services color-1">
-                                            <FcAbout/>
                                             <div className="desc">
                                                 <h3>Programming Languages</h3>
                                                 <p> These are some of the programming 
@@ -39,7 +38,7 @@ export default class Interests extends Component {
                                     </div>
                                     <div className="col-md-5 text-center">
                                         <div className="services color-1">
-                                            <FcAbout/>
+                                            
                                             <div className="desc">
                                                 <h3>Frameworks and tools</h3>
                                                 <p>  These are some of the frameworks 
@@ -56,7 +55,7 @@ export default class Interests extends Component {
                                     </div>
                                     <div className="col-md-5 text-center">
                                         <div className="services color-1">
-                                            <FcAbout/>
+                                           
                                             <div className="desc">
                                                 <h3>Libraries</h3>
                                                 <p>  These are important libraries 
@@ -74,7 +73,7 @@ export default class Interests extends Component {
                 
                                     <div className="col-md-5 text-center">
                                         <div className="services color-1">
-                                            <FcAbout/>
+                                           
                                             <div className="desc">
                                                 <h3>Natural Language Processing</h3>
                                                 <p>
@@ -94,7 +93,7 @@ export default class Interests extends Component {
                                     </div>
                                     <div className="col-md-5 text-center">
                                         <div className="services color-1">
-                                            <FcAbout/>
+                                            
                                             <div className="desc">
                                                 <h3>Deep Learning and Artificial Intelligence (AI)</h3>
                                                 <p> My experiences in industry and 
@@ -117,7 +116,7 @@ export default class Interests extends Component {
 
                                     <div className="col-md-5 text-center">
                                         <div className="services color-1">
-                                            <FcAbout/>
+                                            
                                             <div className="desc">
                                                 <h3>DevOps</h3>
                                                 <p> 
