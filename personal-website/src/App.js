@@ -7,15 +7,15 @@ import {
 
 } from "react-router-dom";
 
-// Importing components 
+// Importing components
 import About from './components/about';
 import Sidebar from './components/sidebar';
 import Projects from './components/projects';
 import Interests from './components/interests';
 import Resume from './components/resume';
 import Experience from './components/experience';
-import NewsTicker from './components/news_ticker';
-// Importing style elements 
+// import NewsTicker from './components/news_ticker';
+// Importing style elements
 import './App.css';
 
 const MainPage = () => {
@@ -42,12 +42,12 @@ class App extends Component {
 									<Route path="/resume" component={Resume}></Route>
 									<Route path="/experience" component={Experience}></Route>
 									<Route path="/*" component={MainPage}></Route>
-								
+
 								</Switch>
 							</div>
 					</Router>
 				</div>
-			</div>			
+			</div>
 		)
 	}
 }

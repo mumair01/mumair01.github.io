@@ -2,10 +2,7 @@
 import React, { Component } from 'react'
 import {Animated} from "react-animated-css";
 import ScrollableAnchor from 'react-scrollable-anchor'
-import {
-		BrowserRouter as Router,
-		Link,
-} from "react-router-dom";
+import {Link,} from "react-router-dom";
 
 
 class Doc extends Component {
@@ -19,13 +16,13 @@ class Doc extends Component {
                         <Link to={process.env.PUBLIC_URL + this.props.file} target="_blank" download>Download</Link>
                     </button>
                 </nav>
-                <iframe title="CV" 
-                src={process.env.PUBLIC_URL + this.props.file}  
+                <iframe title="CV"
+                src={process.env.PUBLIC_URL + this.props.file}
                 style={{
                     "width":"90%",
                     "height":"600px",
                     "border":"2px solid black",
-        
+
                     }}
                 ></iframe>
            </div>

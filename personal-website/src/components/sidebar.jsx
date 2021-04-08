@@ -1,21 +1,15 @@
 // Importing components
 import React, { Component } from 'react'
-import {
-		BrowserRouter as Router,
-		Route,
-		Switch,
-		Link,
-		Redirect
-} from "react-router-dom";
+import {Link,} from "react-router-dom";
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import {MdEmail} from 'react-icons/md'
-import Collapsible from 'react-collapsible';
+// import Collapsible from 'react-collapsible';
 
 
 export default class Sidebar extends Component {
     render () {
         return (
-        
+
             <div>
                 <aside id="colorlib-aside" className="border js-fullheight">
                     <div className="text-center">
@@ -47,27 +41,27 @@ export default class Sidebar extends Component {
                         <nav id="colorlib-main-menu">
                             <ul>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/mumair/" 
-                                    target="_blank" rel="noopener noreferrer"><i 
+                                    <a href="https://www.linkedin.com/in/mumair/"
+                                    target="_blank" rel="noopener noreferrer"><i
                                     /><SiLinkedin/></a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/mumair01" 
-                                    target="_blank" rel="noopener noreferrer"><i 
+                                    <a href="https://github.com/mumair01"
+                                    target="_blank" rel="noopener noreferrer"><i
                                     /><SiGithub/></a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
-                    
+
                     <div className="colorlib-footer">
                         <p><small>Muhammad Umair - Personal website</small></p>
                         <p><small>Muhammad Umair © 2021</small></p>
                     </div>
                 </aside>
-                
+
             </div>
-            
+
         )
     }
 }
